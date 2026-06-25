@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>XSS Test</title>
+</head>
+<body>
+    <h1>XSS Test Page</h1>
+    <script>alert('XSS from External Source')</script>
+    <button onclick="alert('XSS')">
+        Trigger Alert
+    </button>
+</body>
+</html>

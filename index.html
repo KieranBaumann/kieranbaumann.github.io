@@ -1,12 +1,33 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>XSSTest</title>
-  </head>
-  <body>
-    <script>
-      alert(document.domain);
-      alert(document.cookie);
-    </script>
-    <p>XSS</p>
-  </body>
+<head>
+    <title>Security Test Suite</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 15px 25px;
+            margin: 10px;
+            background: #0078d7;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .button:hover {
+            background: #005ea6;
+        }
+    </style>
+</head>
+<body>
+    <h1>Kieran's Testing Tools</h1>
+
+    <a class="button" href="xss.html">XSS Test</a>
+    <a class="button" href="clickjacking.html">Clickjacking Test</a>
+</body>
 </html>
